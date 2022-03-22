@@ -1,4 +1,4 @@
-@import url('http://fonts.cdnfonts.com/css/ea-font%27');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
 *,
 *:before,
@@ -8,38 +8,6 @@
     box-sizing: border-box;
 }
 
-.background {
-    width: 430px;
-    height: 520px;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    left: 50%;
-    top: 60%;
-}
-.background .shape {
-    height: 150px;
-    width: 150px;
-    position: absolute;
-    border-radius: 50%;
-}
-.shape:first-child{
-    background: linear-gradient(
-        #1845ad,
-        #23a2f6
-    );
-    left: -950px;
-    top: -150px;
-}
-.shape:last-child{
-    background: linear-gradient(
-        to right,
-        #ff512f,
-        #f09819
-    );
-    right: 790px;
-    bottom: -40px;
-}
-
 *{
     margin: 0;
     padding: 0;
@@ -47,9 +15,10 @@
 }
 
 body{
-    font-family: 'EA Font v1.5 by Ghettoshark', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color:#EEEEEE;
-    background-color: #080710;
+    background-image: url(/images/bg.jpg);
+    background-position: 180%;
 }
 
 .cabecalho{
@@ -62,22 +31,31 @@ body{
 }
 
 h1{
-    text-align: center;
+  text-align: center;
   color: #eee;
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 36px;
   font-weight: 600;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 p {
     text-align: center;
     color: #eee;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 600;
-    margin-top: 10px;
+    margin-top: 1px;
   }
+
+h2 {
+    text-align: center;
+    color: #eee;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 1px;
+}
 
 .container{
     height: 650px;
@@ -108,7 +86,6 @@ form{
 form input{
     padding: 0.8rem;
     border: transparent;
-    
     background-color: white;
     color: black solid; 
     width: 80%;
@@ -147,29 +124,55 @@ form h3 {
 }
 
 form button{
-    margin-top: 5px;
-    width: 80%;
-    background-color: #ffffff;
-    color: #080710;
-    padding: 15px 0;
-    font-size: 18px;
-    font-weight: 600;
-    border-radius: 5px;
-    cursor: pointer;
+  width: 300px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 4px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 10px;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
-#btnSubmit:hover{
-    background: linear-gradient(
-        #ffffff,
-        #ececec
-    );
+.bt:hover{
+  background-position: 100% 0;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
-#btnReset:hover{
-    background: linear-gradient(
-        #d64f1a,
-        #f62323
-    );
+.bt:hover:focus {
+    outline: none;
+}
+
+.bt.bt2{
+    background-image: linear-gradient(
+        to right,
+        #667eea,
+        #764ba2,
+        #6b8dd6,
+        #8e37d7
+      );
+      box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
+
+.bt.bt3{
+    background-image: linear-gradient(
+        to right,
+        #667eea,
+        #764ba2,
+        #6b8dd6,
+        #8e37d7
+      );
+      box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
 }
 
 .grid{
