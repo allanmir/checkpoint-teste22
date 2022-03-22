@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filme Favorito</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" href="/images/avengers.png">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <div class="cabecalho">
+            <header>
+                <h1>Qual é o seu Marvel favorito?</h1>
+                <p>Temos uma mega surpresa para comemorar a entrada da primeira atriz brasileira no mundo da Marvel</p>
+                <p>Tá a fim de levar um acompanhante para a Marvel Super Hero Island? </p>
+                <h2>Para participar é só compatilhar aqui o seu filme favorito da Marvel</h2>
+            </header>
+        </div>
+        <div class="background">
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+        <div class="container">
+            <form action="#" method="get">
+                <h3>Preencha aqui 🎬</h3>
+                <input class="inp" type="text" name="nome-imagem" id="nome-imagem" placeholder="Nome do Filme">
+                <input class="inp" type="text" name="descricao" id="descricao" placeholder="Descrição do Filme">
+                <input class="inp" type="url" name="url" id="url" placeholder="URL da Capa">
+                <p >Selecione o gênero do filme</p>
+                <label class="genero" for="acao">Ação</label>
+                <input type="radio" name="position" id="acao" value="Ação">
+
+                <label class="genero" for="aventura">Aventura</label>
+                <input type="radio" name="position" id="aventura" value="Aventura">
+
+                <label class="genero" for="terror">Terror</label>
+                <input type="radio" name="position" id="terror" value="Terror">
+
+                <label class="genero" for="checkbox">Marque se for lançamento</label>
+                <input type="checkbox" name="lancamento" id="checkbox">
+
+                <button name="btnSubmit" type="submit" id="btnSubmit">Publicar Filme</button>
+                <button name="btnReset" type="reset" id="btnReset">Remover Filmes</button>
+            </form>
+        </div>
+        <div class="grid">
+            <div class="card-grid" id="card-grid"></div>
+        </div>
+    </main>
+</body>
+
+</html>

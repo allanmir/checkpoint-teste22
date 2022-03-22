@@ -1,0 +1,223 @@
+@import url('http://fonts.cdnfonts.com/css/ea-font%27');
+
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.background {
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 60%;
+}
+.background .shape {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    border-radius: 50%;
+}
+.shape:first-child{
+    background: linear-gradient(
+        #1845ad,
+        #23a2f6
+    );
+    left: -950px;
+    top: -150px;
+}
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        #ff512f,
+        #f09819
+    );
+    right: 790px;
+    bottom: -40px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'EA Font v1.5 by Ghettoshark', sans-serif;
+    color:#EEEEEE;
+    background-color: #080710;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30%;
+    width: auto;
+    margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+  color: #eee;
+  font-family: sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+p {
+    text-align: center;
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+
+.container{
+    height: 650px;
+    width: 30%;
+    float: left;
+    margin-left: 1%;
+    margin-top: 3rem;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3rem;
+    padding: 1.9rem;
+    color: #393E46;
+    font-size: larger;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    position: relative;
+    width: 80%;
+    background-color: rgba(255,255,255,0.13);
+}
+
+
+form input{
+    padding: 0.8rem;
+    border: transparent;
+    
+    background-color: white;
+    color: black solid; 
+    width: 80%;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+}
+
+.inp{
+    display: block;
+    height: 50px;
+    width: 90%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+::placeholder {
+    color: #e5e5e5;
+}
+
+form h3 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+    color: #e5e5e5;
+    padding: 0 0 10px;
+}
+
+.genero {
+    color: #e5e5e5;
+    padding: 10px 0 5px;
+}
+
+form button{
+    margin-top: 5px;
+    width: 80%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btnSubmit:hover{
+    background: linear-gradient(
+        #ffffff,
+        #ececec
+    );
+}
+
+#btnReset:hover{
+    background: linear-gradient(
+        #d64f1a,
+        #f62323
+    );
+}
+
+.grid{
+    height: 650px;
+    width: 65%;
+    margin-right: 1%;
+    margin-top: 3rem;
+    float: right;
+    overflow: auto;
+}
+
+.card-grid{
+    margin-top: 5%;
+    margin-left: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10%;
+    text-align: center;
+    width: 90%;
+    height: 90%;
+}
+
+.card img{
+    height: 80%;
+    width: 80%;
+}
+
+@media only screen and (max-device-width: 900px) {
+    .cabecalho { width:600px; }
+    }
+
+@media only screen and (max-device-width: 700px) {
+    .cabecalho { width:400px; } ;
+    
+    }
+
+@media only screen and (max-device-width: 900px) {
+    .container { width:600px; }
+    }
+    
+@media only screen and (max-device-width: 700px) {
+    .container { width:400px; } 
+    }
+    
+@media only screen and (max-device-width: 900px) {
+        .grid { width:600px; }
+    }
+        
+@media only screen and (max-device-width: 700px) {
+        .grid { width:400px; } 
+    }
