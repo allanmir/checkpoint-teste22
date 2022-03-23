@@ -299,3 +299,7 @@ form button{
 @media only screen and (max-device-width: 700px) {
         .grid { width:400px; } 
     }
+
+@media only screen and (max-device-width: 900px) {
+        .card img { width:250px; }
+    }
