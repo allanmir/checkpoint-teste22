@@ -17,8 +17,8 @@
 body{
     font-family: 'Montserrat', sans-serif;
     color:#EEEEEE;
-    background-image: url(images/bg.jpg);
-    background-position: 180%;
+    background-image: url(/images/bg.png);
+    display: block;
 }
 
 .cabecalho{
@@ -58,7 +58,6 @@ h2 {
 }
 
 .container{
-    height: 650px;
     width: 30%;
     float: left;
     margin-left: 1%;
@@ -69,7 +68,6 @@ form{
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 3rem;
     padding: 1.9rem;
     color: #393E46;
     font-size: larger;
@@ -78,7 +76,7 @@ form{
     border: 2px solid rgba(255,255,255,0.1);
     box-shadow: 0 0 40px rgba(8,7,16,0.6);
     position: relative;
-    width: 80%;
+    width: 98%;
     background-color: rgba(255,255,255,0.13);
 }
 
@@ -87,7 +85,7 @@ form input{
     padding: 0.8rem;
     border: transparent;
     background-color: white;
-    color: black solid; 
+    color: white; 
     width: 80%;
     margin-bottom: 0.5rem;
     border-radius: 5px;
@@ -118,10 +116,87 @@ form h3 {
     padding: 0 0 10px;
 }
 
-.genero {
-    color: #e5e5e5;
-    padding: 10px 0 5px;
+.label1 {
+  display: flex;
+  align-items: center;
+
+  border-radius: 100px;
+  padding: 14px 16px;
+  margin: 10px 0;
+
+  cursor: pointer;
+  transition: .3s;
 }
+
+.label1:hover,
+.label1:focus-within {
+  background: hsla(0, 0%, 80%, .14);
+}
+
+.input2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  z-index: -1;
+}
+
+.modelo2 {
+  width: 22px;
+  height: 22px;
+  border-radius: 100px;
+  background: linear-gradient(to right bottom, hsl(241, 88%, 77%), hsl(263, 96%, 44%));
+  position: relative;
+}
+
+.modelo2::before {
+  content: '';
+
+  display: inline-block;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+
+  background: hsl(0, 0%, 90%);
+  transform: scale(1.1);
+  transition: .3s;
+}
+
+.input2:checked+.modelo2::before {
+  transform: scale(0);
+}
+
+.genero {
+  color: hsl(0, 0%, 100%);
+  margin-left: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 900;
+  transition: .3s;
+}
+.genero2 {
+    color: hsl(0, 0%, 100%);
+    margin-left: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 900;
+    transition: .3s;
+  }
+
+  .lanc {
+    background-image: linear-gradient(
+        to right,
+        #667eea,
+        #764ba2,
+        #6b8dd6,
+        #8e37d7
+      );
+      box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+  }
 
 form button{
   width: 300px;
