@@ -289,7 +289,7 @@ form button{
     }
     
 @media only screen and (max-device-width: 700px) {
-    .container { width:400px; } 
+    .container { width:450px; } 
     }
     
 @media only screen and (max-device-width: 900px) {
