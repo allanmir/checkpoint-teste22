@@ -38,8 +38,8 @@ if(title.value == "" || image.value == "" || desc.value == "" || options[0] == u
 else{
 
     if(box.checked == true){
-        img.style.border = '1px solid orange';
-        cardTitle.style.color = 'orange';
+        img.style.border = '1px solid #8e37d7';
+        cardTitle.style.color = '#8e37d7';
         cardParagraph.style.color = 'white';
         cardGrid.appendChild(card);
         divImg.appendChild(img);
