@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&family=Roboto&display=swap" rel="stylesheet');
 
 *,
 *:before,
@@ -17,7 +17,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
     color:#EEEEEE;
-    background-image: url(images/bg.png);
+    background-image: url(/images/bg.png);
     display: block;
 }
 
@@ -52,9 +52,10 @@ h2 {
     text-align: center;
     color: #eee;
     font-family: 'Montserrat', sans-serif;
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 600;
     margin-top: 1px;
+    font-style: italic;
 }
 
 .container{
